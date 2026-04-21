@@ -24,6 +24,10 @@ function triplePush() {
 
 function longPush() {
   // Add your action here
+}
+
+function longHold() {
+  // Dim all lights
   Shelly.call("Light.SetAll", { on: true, brightness: 1, transition_duration: 1 });
 }
 
@@ -89,7 +93,8 @@ function bleScanCallback(event, result) {
   if (btn === 1) singlePush();
   else if (btn === 2) doublePush();
   else if (btn === 3) triplePush();
-  else if (btn === 254) longPush();
+  else if (btn === 4) longPush();
+  else if (btn === 254) longHold();
 }
 
 // --- Start the scanner ---
