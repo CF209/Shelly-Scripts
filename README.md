@@ -10,4 +10,4 @@ To use:
 
 ## pwm_input_handling.js
 
-Adds light control from a PWM input. The Shelly doesn't natively support PWM on the analog input, and the signal is very noisy, so a stability algorithm was used to help account for this, but the brightness still jumps around a bunch when adjusting the switch.
+Adds light control from a PWM input. The Shelly doesn't natively support PWM on the analog input, and the signal is very noisy, so a stability algorithm was used to help account for this, but the brightness still jumps around a bunch when adjusting the switch. There are multiple hardcoded fields in here for my specific setup, but could possibly be used as a reference.
